@@ -18,12 +18,12 @@ Markdown supported features:
 * Link
 * Page break
 
-Every feature follow the common Markdown syntax. A list of examples can be seen into the `example\` folder. Please remind that special characters such as `%` or `"` need to be espaced with a `\` to be admissible.
+Every feature follow the common Markdown syntax. A list of examples can be seen into the `example/` folder. Please remind that special characters such as `%` or `"` need to be espaced with a `\` to be admissible.
 
 ## How to use
 
 ```
-python generate_doc.py output.docx --template example/template.docx --files examples/*.md
+python generate_doc.py output.docx --template example/template.docx --files example/*.md
 ```
 The command requests:
 * The name and location of the output file
@@ -32,4 +32,4 @@ The command requests:
 
 ## Requirements
 
-This tool has been tested with Python 3.5. See _requirements.txt_ for all the libraries dependencies.
+This tool has been tested with Python 3.5 under a Windows platform. See _requirements.txt_ for all the libraries dependencies.
