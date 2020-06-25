@@ -23,7 +23,7 @@ Every feature follow the common Markdown syntax. A list of examples can be seen 
 ## How to use
 
 ```
-python generate_doc.py output.docx --template example/template.docx --files examples/*.md
+python generate_doc.py output.docx --template example/template.docx --files example/*.md
 ```
 The command requests:
 * The name and location of the output file
