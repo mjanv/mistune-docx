@@ -12,7 +12,8 @@ Markdown supported features:
 * Headers (level 1 to 5)
 * Bullet lists
 * Tables with cells containing simple text (normal, bold or italic)
-* Blockquote
+* Blockquote (delimited by triple backticks)
+* Code span (delimited by single backticks)
 * Images
 * Mathematical equations (using Sympy rendering)
 * Link
