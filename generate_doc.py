@@ -79,9 +79,12 @@ class PythonDocxRenderer(mistune.Renderer):
     def double_emphasis(self, text):
         return text[:-1] + '.bold = True\n'
 
+    def codespan(self, text):
+        return "p.add_run(\"%s\", style=\"CodeSpan\")\n" % text
+
     def block_code(self, code, language):
         code = code.replace('\n', '\\n')
-        return "p = document.add_paragraph()\np.add_run(\"%s\")\np.style = 'BasicUserQuote'\np.add_run().add_break()\n" % code
+        return "p = document.add_paragraph()\np.add_run(\"%s\")\np.style = 'BlockCode'\np.add_run().add_break()\n" % code
 
     def link(self, link, title, content):
         return "%s (%s)" % (content, link)
